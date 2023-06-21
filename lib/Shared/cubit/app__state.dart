@@ -1,18 +1,21 @@
-part of 'app_cubit.dart';
 
-@immutable
-abstract class AppState {}
 
-class AppInitial extends AppState {}
+abstract class AppStates {}
 
-class AppChangeBottom extends AppState{}
+class AppInitialState extends AppStates {}
 
-class AppCreateDatabaseState extends AppState{}
+class AppChangeBottomNavBarState extends AppStates {}
 
-class AppInsertIntoDatabaseState extends AppState{}
+class AppCreateDatabaseState extends AppStates {}
 
-class AppGetFromDatabaseState extends AppState{}
+class AppGetDatabaseLoadingState extends AppStates {}
 
-class AppChangeIconAndBottomSheetState extends AppState{}
+class AppGetDatabaseState extends AppStates {}
 
-class AppLoadingState extends AppState{}
+class AppInsertDatabaseState extends AppStates {}
+
+class AppUpdateDatabaseState extends AppStates {}
+
+class AppDeleteDatabaseState extends AppStates {}
+
+class AppChangeBottomSheetState extends AppStates {}
